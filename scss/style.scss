@@ -1,0 +1,64 @@
+$glow:0px 2px 25px rgba(144, 244, 253, .6);
+$paleturquoise:#afeeee;
+$backgroundDark:#222222;
+$grey:#444444;
+
+@import url(https://fonts.googleapis.com/css?family=Orbitron:700,900,500,400);
+html,
+body {
+  width: 100%;
+  height: 100%
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  background: $backgroundDark;
+  color: $paleturquoise;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#app {
+  width: 100%;
+  height: auto;
+  #time {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2.5em;
+    text-shadow: $glow;
+    #ampm {
+      font-size: .5em;
+    }
+  }
+  #days, #fullDate {
+    width: 25%;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .days {
+    flex: 1;
+    color: $grey;
+    text-align: center;
+  }
+
+  .active {
+    color: paleturquoise;
+    text-shadow: $glow;
+  }
+  #fullDate {
+    margin-top:.25em;
+    text-shadow: $glow;
+  }
+  #sec{
+    display:inline-block;
+    width:70px;
+  }
+}
